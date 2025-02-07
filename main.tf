@@ -109,7 +109,7 @@ resource "aws_s3_bucket_server_side_encryption_configuration" "exam_logs_encrypt
   rule {
     apply_server_side_encryption_by_default {
       sse_algorithm     = "aws:kms"
-      kms_master_key_id = aws_kms_key.s3_kms.arn # 绑定 KMS Key
+      kms_master_key_id = aws_kms_key.s3_kms.arn 
     }
   }
 }
